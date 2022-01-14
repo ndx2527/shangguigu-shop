@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
+import TypeNav from '@/components/TypeNav'
+
+Vue.component(TypeNav.name, TypeNav)
 
 // 引入路由
 import router from '@/router'

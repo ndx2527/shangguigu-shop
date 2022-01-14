@@ -1,18 +1,32 @@
 <template>
   <div>
-    <div>
-      Home页面
-    </div>
-    <div>
-      <router-link to="/home">home |</router-link>
-      <router-link to="/login"> login |</router-link>
-      <router-link to="/search"> search |</router-link>
-    </div>
+    <TypeNav></TypeNav>
+    <ListContainer></ListContainer>
+    <Recommend></Recommend>
+    <Rank></Rank>
+    <Like></Like>
+    <Floor></Floor>
+    <Brand></Brand>
   </div>
 </template>
 
 <script>
-export default {};
+import ListContainer from "@/components/ListContainer";
+import Recommend from "@/components/Recommend";
+import Rank from "@/components/Rank";
+import Like from "@/components/Like";
+import Floor from "@/components/Floor";
+import Brand from "@/components/Brand";
+export default {
+  components: {
+    ListContainer,
+    Recommend,
+    Rank,
+    Like,
+    Floor,
+    Brand,
+  },
+};
 </script>
 
 <style>
