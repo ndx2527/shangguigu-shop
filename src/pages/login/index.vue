@@ -9,6 +9,8 @@
 export default {
   methods: {
     goHome() {
+      // 页面中读取
+      // console.log(this.$store.state.DbSource);
       this.$router.push("/home");
     },
   },
