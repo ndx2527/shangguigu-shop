@@ -1,8 +1,9 @@
 <template>
   <div>
     <Header></Header>
-    <Footer></Footer>
+    <!-- 在home、search页面的时候显示 -->
     <router-view></router-view>
+    <Footer v-show="$route.meta.show"></Footer>
   </div>
 </template>
 
